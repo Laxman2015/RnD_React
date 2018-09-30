@@ -7,7 +7,7 @@ class BookDetail extends Component{
       return <div> Please select a book</div>
     }
     return(
-      <div><H2>Detail Books</H2>
+      <div><h2>Detail Books</h2>
       {this.props.activeBook.title}</div>
     )
   }
