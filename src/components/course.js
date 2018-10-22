@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
 
-const Course = (props) => {    
+const Course = (props) => { 
+        if(!props.courses){
+          return;
+        }
+        var courcsList=props.courses.courses;  
         return(
-           props.courses.map(function(item){
-                return <li key={item}>{item}</li>;
+           courcsList.map(function(item){
+                return <li className="list-group-item" key={item.id}>{item.course}</li>;
            })
         )
     
   }
 
-export default Course;
+export default Course;  
