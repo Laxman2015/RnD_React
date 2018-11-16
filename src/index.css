@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.header {
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 36px;
+	font-weight: normal;
+	color: #007FA3;
+	padding: 20px 0;
+}
+
+.list-group {
+	max-width: 800px;
+	margin: 0 auto;
+	list-style: none;
+	padding: 0;
+}
+
+.list-wrapper {
+	background-color: #d8d8d8;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.item {
+	background-color: #fff;
+  width: 212px;
+  position: relative;
+  height: 120px;
+  display: inline-block;
+  margin: 42px 18px 15px;
+  margin-right: 19px;
+}
+
+.avatar {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	left: 65px;
+	top: -40px;
+}
+
+.avatar-wrapper {
+	position: relative;
+}
+
+.full-name-wrapper {
+	font-size: 18px;
+	color: #e93939;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.delete-user-btn {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	border: none;
+	background: none;
+	color: #007FA3;
+	font-size: 14px;
+	cursor: pointer;
+}
