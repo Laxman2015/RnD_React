@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-class paymentMode extends Component {
-    state = {  }
-    render() {
+const PaymentMode = function(props) {
+    
         const paymentType = ['American Express', 'VISA', 'DBS PayLa'];
         const listItems = paymentType.map((type, index) =>
-            <li className="list-group-item" key={index}><label>
+            <li className="list-group-item" key={index}>
+                <label>
                     <input
-                    defaultValue={type}
+                    value={type}
                     type="radio"
-                    ref={this.input}
+                    onChange={props.onChange}
                     name ='paymentType'/>{" "}
                     { type}
                 </label>
@@ -19,7 +19,6 @@ class paymentMode extends Component {
         </ul>
 
          );
-    }
 }
  
-export default paymentMode;
+export default PaymentMode;
