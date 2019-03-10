@@ -1,16 +1,13 @@
 import React from 'react';
 import Row from './tableRow';
 const Table = function(props){
-
-    const row = props.datas.map((item)=>{
-        <tr>
-            <td>{item.id}</td>
-            <td>{item.userNmae}</td>
-            <td>{item.paymentMode}</td>
-            <td>{item.amount}</td>
-        </tr>
+console.log('tableprops', props)
+    const row = props.tableData.map((item)=>{
+        return( 
+            <Row key={item.id} item={item}/>
+        )
     })
-    
+    console.log(row);
     return(
         <table className="table">
             <thead>

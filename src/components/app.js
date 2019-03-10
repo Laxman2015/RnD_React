@@ -7,11 +7,11 @@ export default class App extends Component {
   constructor(props){
     super(props);
     this.state={
-      id:1,
-      userNmae:'xyz',
-      paymentMode:'American Express',
-      amount:100,
-      data:[]
+        id:1,
+        userNmae:'xyz',
+        paymentMode:'American Express',
+        amount:100,
+        tableData:[]
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleRadioChange = this.handleRadioChange.bind(this);
@@ -33,9 +33,9 @@ export default class App extends Component {
                   paymentMode:this.state.paymentMode,
                   amount:this.state.amount
                  }
-    this.setState({data: [...this.state.data, data]});
+    this.setState({tableData: [...this.state.tableData, data]});
     this.setState({id: this.state.id + 1});
-    console.log(this.state.data)
+    
   }
   render() {
     return (
@@ -56,7 +56,7 @@ export default class App extends Component {
       </div>
 
       <div>
-        <Table datas={this.state.data} />
+        <Table tableData={this.state.tableData} />
       </div>
     </div>
     );
